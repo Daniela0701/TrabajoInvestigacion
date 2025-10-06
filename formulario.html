@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Registro de usuario</legend>
+            <label for="nombres">Nombre del usuario</label><br>
+            <input type="text" name="nombreusuario" id="nombres" required><br>
+            <label for="apellidos">Apellido del usuario</label><br>
+            <input type="text" name="apellidousuario" id="apellidos" required><br>
+            <label for="edad">Edad</label><br>
+            <input type="number" name="edadusuario" id="edad" required><br>
+            <label for="email">Correo Electronico</label><br>
+            <input type="email" name="Correo" id="email" required><br>
+            <label for="contra">Contraseña</label><br>
+            <input type="password" name="contraseña" id="contra" required><br>
+            <input type="submit" name="registro" value="Registrarse">
+        </fieldset>
+
+
+        <fieldset>
+        <legend>Encuesta Simple</legend>
+        <label>¿Que sistema operativo usas?</label><br>
+        <input type="radio" name="sistoperativo" value="windows" id="wind" checked>
+        <label for="wind">windows</label><br>
+        <input type="radio" name="sistoperativo" value="Linux" id="linux">
+        <label for="linux">Linux</label><br>
+        <input type="radio" name="sistoperativo" value="ios" id="iOS">
+        <label for="iOS">iOS</label><br>   
+
+        <label>¿Que tipo de lenguaje de porgramacion conoces?</label><br>
+        <input type="checkbox" name="lenguaje" value="php" id="php">
+        <label for="php">PHP</label><br>
+        <input type="checkbox" name="de" value="c++" id="c++">
+        <label for="c++">C++</label><br>
+        <input type="checkbox" name="porgramacion" value="java" id="Java">
+        <label for="Java">Java</label><br>
+
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="reset" value="Limpiar"><br>
+            <label>Agregar una breve descripcion</label><br>
+            <textarea name="descripcion" cols="25" rows="15">Escriba aquí
+
+            </textarea>
+
+        </fieldset>
+    
+        <fieldset>
+            <label for="foto">selecionar archivo</label>
+            <input type="file" name="archivo" id="foto"><br>
+            <input type="submit" name="enviar" value="enviar">
+        </fieldset>
+
+        <fieldset>
+            <label for="nombre2">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre2"><br>
+            <label for="apellido2">Apellido</label><br>
+            <input type="text" name="apellido" id="apellido2"><br>
+            <label for="hora">Hora</label><br>
+            <select name="hora" id="hora">
+                <option value="selec">seleccione</option>
+                <option value="1ra">10:30</option>
+                <option value="2da">08:00</option>
+                <option value="3ra">9:15</option>
+            </select><br>
+            <label>¿Que talleres conoces?</label><br>
+            <input type="checkbox" name="taller" value="ninguna" id="ning">
+            <label for="ning">Ninguna</label><br>
+            <input type="checkbox" name="electricidad" value="electri" id="electricidad">
+            <label for="electricidad">Electricidad</label><br>
+            <input type="checkbox" name="prog" value="prog" id="programacion">
+            <label for="programacion">Programacion</label><br>
+            <input type="checkbox" name="compu" value="compu" id="computacion">
+            <label for="computacion">Computacion</label><br>
+            <input type="checkbox" name="electronica" value="elec" id="electronica">
+            <label for="electronica">Electronica</label><br>
+            <label>Agregue una breve descripcion</label><br>
+            <textarea name="descripcion" cols="25" rows="15">Escriba aquí</textarea><br>
+            <input type="submit" name="enviar" value="enviar">
+        </fieldset>
+
+        <fieldset>
+            <label>¿Que va a pedir?</label>
+            <select name="menu" id="menu">
+                <option value="ninguno">Ninguno</option>
+                <option value="uno">Fideos Con Tuco</option>
+                <option value="dos">Estofado</option>
+                <option value="tres">Hamburguesa</option>
+                <option value="cuatro">Pizza</option>
+            </select><br>
+            <label>Ingrese la cantidad de personas por mesa</label>
+            <input type="number" name="edad" min="1" max="10" placeholder="Ingrese">
+            <label>Medio de pago</label><br>
+            <input type="radio" name="efectivo" value="efect" id="efectivo" checked>
+            <label for="efectivo">Efectivo</label><br>
+            <input type="radio" name="credito" value="credito" id="credito">
+            <label for="credito">Credito</label><br>
+            <input type="radio" name="dev" value="debito" id="debito">
+            <label for="debito">Debito</label><br>
+            <input type="submit" name="Confirmar" id="Confirmar">
+        </fieldset>
+
+        <fieldset>
+            <label for="nombre1">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre1"><br>
+            <label for="email1">Email</label><br>
+            <input type="email" name="email" id="email1"><br>
+            <label>¿Que problema tiene la computadora?</label><br>
+            <input type="radio" name="compu" value="compu" id="computadora">
+            <label for="computadora">No prende la compu</label><br>
+            <input type="radio" name="trabada" value="trabado" id="trabado">
+            <label for="trabado">Se trabaja la compu con frecuencia</label><br>
+            <input type="radio" name="apagado" value="apag" id="apagado">
+            <label for="apagado">Se prende y apaga la compu</label><br>
+            <label>Describa mas detalladamente su problema</label><br>
+            <textarea name="descripcion" cols="25" rows="15">Descripcion del problema</textarea><br>
+            <input type="submit" name="enviar" id="enviar">
+            <!--Comentario para la exposicion-->
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
